@@ -1,6 +1,10 @@
 import {createApi, fetchBaseQuery} from "@reduxjs/toolkit/dist/query/react";
-import {ITest} from "../models/ITest";
 import {BASE_URL} from "../config";
+export interface ITest {
+    id: number,
+    body: string,
+    postId: string
+}
 
 export const testAPI = createApi({
     reducerPath: 'testAPI',
